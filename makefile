@@ -22,7 +22,6 @@ $(addprefix $(OUTDIR)/, $(PROGS)): $(addprefix $(OBJDIR)/, $(OBJS))
 	$(G++) $^ -o $@
 
 $(OBJDIR)/%.o : $(SRCDIR)/%.cpp
-	@echo "Compiling " $@ "..."
 	$(G++) $(CFLAGS) $(INC) -c $< -o $@
 
 $(OBJDIR)/$(OBJS): $(addprefix $(INCDIR)/, $(HEADERS))
