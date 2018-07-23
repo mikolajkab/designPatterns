@@ -1,3 +1,5 @@
+#pragma once
+
 #include "MapSite.h"
 #include <cstdint>
 
@@ -9,10 +11,11 @@ public:
   virtual ~Room();
 
   MapSite *GetSide(Direction) const;
+  void SetSide(Direction, MapSite *);
 
   virtual void Enter();
 
 private:
-  MapSite *sides[4];
-  uint8_t roomNo;
+  MapSite *_sides[4];
+  uint8_t _roomNumber;
 };
