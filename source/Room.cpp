@@ -15,4 +15,5 @@ void Room::Enter()
 
 void Room::SetSide(Direction dir, MapSite *)
 {
+    ;
 }
