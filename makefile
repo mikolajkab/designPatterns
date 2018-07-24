@@ -1,16 +1,28 @@
 PROGS = app
 HEADERS = *.h
 
-_SRCS = $(wildcard source/*.cpp)
+_SRCS = $(wildcard app/source/*.cpp) \
+		$(wildcard abstract/source/*.cpp) \
+		$(wildcard concrete/source/*.cpp) \
+		$(wildcard client/source/*.cpp)
+
 SRCS = $(_SRCS:source/%=%)
 OBJS = $(SRCS:.cpp=.o)
 
-SRCDIR = source
-INCDIR = include
+SRCDIR = app/source \
+		 abstract/source \
+		 concrete/source \
+		 client/source
+
+INCDIR = app/include \
+		 abstract/include \
+		 concrete/include \
+		 client/include
+
 OBJDIR = object
 OUTDIR = output
 
-G++ = g++ 
+G++ = g++
 CFLAGS = -g
 INC = -I $(INCDIR)
 
@@ -22,6 +34,7 @@ $(addprefix $(OUTDIR)/, $(PROGS)): $(addprefix $(OBJDIR)/, $(OBJS))
 	$(G++) $^ -o $@
 
 $(OBJDIR)/%.o : $(SRCDIR)/%.cpp
+	@echo Complitaion...
 	$(G++) $(CFLAGS) $(INC) -c $< -o $@
 
 $(OBJDIR)/$(OBJS): $(addprefix $(INCDIR)/, $(HEADERS))
