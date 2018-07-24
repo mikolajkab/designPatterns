@@ -5,7 +5,10 @@
             "includePath": [
                 "/usr/include/c++/8/",
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/include/*"
+                "${workspaceFolder}/abstract/include/**",
+                "${workspaceFolder}/concrete/include/*",
+                "${workspaceFolder}/client/include/*",
+                "${workspaceFolder}/app/include/*"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

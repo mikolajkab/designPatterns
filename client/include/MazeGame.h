@@ -5,9 +5,9 @@
 
 class MazeGame
 {
-  public:
-    MazeGame();
-    virtual ~MazeGame();
+public:
+  MazeGame();
+  virtual ~MazeGame();
 
-    Maze *CreateMaze(MazeFactory &factory);
+  Maze *CreateMaze(MazeFactory &factory);
 };
