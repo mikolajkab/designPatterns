@@ -10,13 +10,17 @@ CLIENT = $(wildcard ../client/object/*.o)
 CONCRETE = $(wildcard ../concrete/object/*.o)
 
 SRCDIR = source
-INCDIR = include
+INCDIR = include \
+		../client/include \
+		../abstract/include \
+		../concrete/include 
+
 OBJDIR = object
 OUTDIR = output
 
 G++ = g++
 CFLAGS = -g
-INC = -I $(INCDIR)
+INC = $(addprefix -I , $(INCDIR))
 
 all: $(addprefix $(OUTDIR)/, $(PROGS))
 	@echo app done
