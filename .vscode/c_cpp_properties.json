@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/usr/include/c++/8/",
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/builder/include/**",
+                "${workspaceFolder}/standardBuilder/include/*",
+                "${workspaceFolder}/cmplexBuilder/include/*",
+                "${workspaceFolder}/app/include/*"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
