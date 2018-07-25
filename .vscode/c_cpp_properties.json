@@ -5,10 +5,10 @@
             "includePath": [
                 "/usr/include/c++/8/",
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/builder/include/**",
-                "${workspaceFolder}/standardBuilder/include/*",
-                "${workspaceFolder}/cmplexBuilder/include/*",
-                "${workspaceFolder}/app/include/*"
+                "${workspaceFolder}/app/include/**",
+                "${workspaceFolder}/game/include/*",
+                "${workspaceFolder}/mazeComplex/include/*",
+                "${workspaceFolder}/mazeStandard/include/*"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
