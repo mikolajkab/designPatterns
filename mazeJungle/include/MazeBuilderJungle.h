@@ -3,8 +3,7 @@
 #include "MazeBuilder.h"
 #include "MazeJungle.h"
 
-class MazeBuilderJungle
-    : public MazeBuilder
+class MazeBuilderJungle : public MazeBuilder
 {
 public:
   MazeBuilderJungle();

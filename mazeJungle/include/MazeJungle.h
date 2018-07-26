@@ -1,7 +1,8 @@
+#pragma once
+
 #include "Maze.h"
 
-class MazeJungle
-    : public Maze
+class MazeJungle : public Maze
 {
   public:
     MazeJungle();

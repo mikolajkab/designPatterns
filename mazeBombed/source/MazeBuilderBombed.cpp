@@ -8,6 +8,7 @@ MazeBuilderBombed::MazeBuilderBombed()
 {
     maze = 0;
 }
+
 MazeBuilderBombed::~MazeBuilderBombed() {}
 
 void MazeBuilderBombed::BuildMaze()

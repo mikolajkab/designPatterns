@@ -3,19 +3,18 @@
 #include "MazeBuilder.h"
 #include "MazeBombed.h"
 
-class MazeBuilderBombed
-    : public MazeBuilder
+class MazeBuilderBombed : public MazeBuilder
 {
-  public:
-    MazeBuilderBombed();
-    ~MazeBuilderBombed();
+public:
+  MazeBuilderBombed();
+  ~MazeBuilderBombed();
 
-    void BuildMaze() override;
-    void BuildRoom(int n) override;
-    void BuildDoor(int n1, int n2) override;
+  void BuildMaze() override;
+  void BuildRoom(int n) override;
+  void BuildDoor(int n1, int n2) override;
 
-    virtual Maze *GetMaze() override;
+  virtual Maze *GetMaze() override;
 
-  private:
-    MazeBombed *maze;
+private:
+  MazeBombed *maze;
 };

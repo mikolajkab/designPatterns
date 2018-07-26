@@ -7,8 +7,8 @@
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/app/include/**",
                 "${workspaceFolder}/game/include/*",
-                "${workspaceFolder}/mazeComplex/include/*",
-                "${workspaceFolder}/mazeStandard/include/*"
+                "${workspaceFolder}/mazeBombed/include/*",
+                "${workspaceFolder}/mazeJungle/include/*"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
