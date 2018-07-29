@@ -16,6 +16,7 @@ all: $(addprefix $(OBJDIR)/, $(OBJS))
 	@echo game objects done
 
 $(OBJDIR)/%.o : $(SRCDIR)/%.cpp
+	echo compiling...
 	$(G++) $(CFLAGS) $(INC) -c $< -o $@
 
 $(OBJDIR)/$(OBJS): $(HEADERS)

@@ -5,9 +5,9 @@ _SRCS = $(wildcard source/*.cpp)
 SRCS = $(_SRCS:source/%=%)
 OBJS = $(SRCS:.cpp=.o)
 
-ABSTRACT = $(wildcard ../game/object/*.o)
-CLIENT = $(wildcard ../mazeBombed/object/*.o)
-CONCRETE = $(wildcard ../mazeJungle/object/*.o)
+GAME = $(wildcard ../game/object/*.o)
+BOMBED = $(wildcard ../mazeBombed/object/*.o)
+JUNGLE = $(wildcard ../mazeJungle/object/*.o)
 
 SRCDIR = source
 INCDIR = include \
@@ -25,11 +25,12 @@ INC = $(addprefix -I , $(INCDIR))
 all: $(addprefix $(OUTDIR)/, $(PROGS))
 	@echo app done
 
-$(addprefix $(OUTDIR)/, $(PROGS)): $(addprefix $(OBJDIR)/, $(OBJS)) $(ABSTRACT) $(CONCRETE) $(CLIENT)
+$(addprefix $(OUTDIR)/, $(PROGS)): $(addprefix $(OBJDIR)/, $(OBJS)) $(GAME) $(BOMBED) $(JUNGLE)
 	@echo "Building target" $@ "..."
 	$(G++) $^ -o $@
 
 $(OBJDIR)/%.o : $(SRCDIR)/%.cpp
+	@echo Complinig
 	$(G++) $(CFLAGS) $(INC) -c $< -o $@
 
 $(OBJDIR)/$(OBJS): $(HEADERS)

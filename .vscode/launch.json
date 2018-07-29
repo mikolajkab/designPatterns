@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/output/app",
+            "program": "${workspaceFolder}/app/output/app",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
