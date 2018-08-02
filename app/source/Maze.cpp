@@ -5,20 +5,9 @@
 using namespace std;
 
 Maze::Maze(){};
-Maze::~Maze(){};
 
-Maze *Maze::instance = 0;
-
-Maze *Maze::Instance()
+Maze &Maze::getInstance()
 {
-    if (instance == 0)
-    {
-        instance = new Maze();
-        cout << "First instance" << endl;
-    }
-    else
-    {
-        cout << "Previous instance" << endl;
-    }
+    static Maze instance;
     return instance;
 }

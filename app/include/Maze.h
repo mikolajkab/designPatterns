@@ -6,13 +6,10 @@
 class Maze
 {
   public:
-    static Maze *Instance();
+    static Maze &getInstance();
 
   private:
     Maze();
-    ~Maze();
-
-    static Maze *instance;
 
     Door door;
     Room room;
