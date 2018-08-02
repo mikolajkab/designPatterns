@@ -1,7 +1,8 @@
 #pragma once
 
 #include "Sportman.h"
-#include "SoccerPlayer.h"
+
+class SoccerPlayer;
 
 class HockeyPlayerAdapter
     : public Sportman

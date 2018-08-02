@@ -19,7 +19,7 @@ all: $(addprefix $(OUTDIR)/, $(PROGS))
 
 $(addprefix $(OUTDIR)/, $(PROGS)): $(addprefix $(OBJDIR)/, $(OBJS))
 	@echo "Building target" $@ "..."
-	$(G++) $^ -o $@
+	$(G++) $^ -o $@	
 
 $(OBJDIR)/%.o : $(SRCDIR)/%.cpp
 	@echo Complinig
