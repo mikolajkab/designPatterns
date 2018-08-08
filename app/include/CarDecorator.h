@@ -5,13 +5,13 @@
 class CarDecorator
     : public Car
 {
-  public:
-    CarDecorator(Car *c);
-    ~CarDecorator();
+public:
+  CarDecorator(Car *c);
+  ~CarDecorator();
 
-    double getPrice();
-    double getWeight();
+  double getPrice();
+  double getWeight();
 
-  private:
-    Car *car;
+private:
+  Car *car;
 };
