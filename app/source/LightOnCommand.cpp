@@ -1,6 +1,6 @@
 #include "LightOnCommand.h"
 
-LightOnCommand::LightOnCommand(const Light &lig)
+LightOnCommand::LightOnCommand(Light *lig)
     : light(lig)
 {
 }

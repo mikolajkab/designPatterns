@@ -3,12 +3,12 @@
 #include "Command.h"
 #include "Light.h"
 
-class LightOnCommand
+class LightOffCommand
     : public Command
 {
 public:
-  LightOnCommand(Light *light);
-  virtual ~LightOnCommand();
+  LightOffCommand(Light *light);
+  virtual ~LightOffCommand();
   void execute() override;
 
 private:
