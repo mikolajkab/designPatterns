@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/usr/include/c++/8/",
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/app/include/**",
+                "${workspaceFolder}/game/include/*",
+                "${workspaceFolder}/mazeBombed/include/*",
+                "${workspaceFolder}/mazeJungle/include/*"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
